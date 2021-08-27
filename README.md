@@ -1,9 +1,9 @@
-# Fabric Example Mod
+# Cahmi's Snacks Mod
 
-## Setup
+A Fabric mod meant to add popular snack choices from American stores such as Snickers, Reese's and much more which will be added in future versions!
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+this mod is very much still in development and is mainly meant as practice in Java and mod development for myself.
 
-## License
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+# Fabric 
+this mod is developed in Fabric and requires the latest version of Fabric for Minecraft version 1.16.5
