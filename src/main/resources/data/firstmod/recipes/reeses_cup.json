@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "SGS",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:cocoa_beans"
+        },
+        "S": {
+            "item": "minecraft:sugar"
+        },
+        "G": {
+            "item": "minecraft:gold_nugget"
+        }
+    },
+    "result": {
+        "item": "firstmod:reeses_cup",
+        "count": 6
+    },
+    "group": "firstmod"
+}
