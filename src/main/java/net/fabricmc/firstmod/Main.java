@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.firstmod.blocks.PantryBlock;
 import net.fabricmc.firstmod.blocks.entity.PantryBlockEntity;
 import net.fabricmc.firstmod.items.NewItem;
+import net.fabricmc.firstmod.items.PowderedCocoa;
 import net.fabricmc.firstmod.items.ReesesCup;
 import net.fabricmc.firstmod.items.SnickersBar;
 import net.minecraft.block.Block;
@@ -50,7 +51,13 @@ public class Main implements ModInitializer {
 					.alwaysEdible()
 					.statusEffect(new StatusEffectInstance(StatusEffects.SPEED,20*30),1F).build()).group(SNACK_GROUP));
 
-
+	public static final Item POWDERED_COCOA = new PowderedCocoa(new FabricItemSettings().group(ItemGroup.MISC)
+			.maxCount(64)
+			.food(new FoodComponent.Builder()
+					.snack()
+					.statusEffect(new StatusEffectInstance(StatusEffects.POISON,20*60), 1F)
+					.statusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 20*60), 1F)
+					.build()).group(SNACK_GROUP));
 
 	public static BlockEntityType<PantryBlockEntity> PANTRY_BLOCK_ENTITY;
 	@Override
@@ -69,6 +76,7 @@ public class Main implements ModInitializer {
 		Registry.register(Registry.BLOCK, new Identifier("firstmod","pantry_block"), CANDY_PANTRY);
 		Registry.register(Registry.ITEM, new Identifier("firstmod", "pantry_block"), new BlockItem(CANDY_PANTRY, new FabricItemSettings().group(ItemGroup.INVENTORY).group(SNACK_GROUP)));
 		Registry.register(Registry.ITEM, new Identifier("firstmod","reeses_cup"), REESES_CUP);
+		Registry.register(Registry.ITEM, new Identifier("firstmod", "powdered_cocoa"), POWDERED_COCOA);
 
 	}
 }
