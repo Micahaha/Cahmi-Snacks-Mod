@@ -6,12 +6,11 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.firstmod.blocks.PantryBlock;
 import net.fabricmc.firstmod.blocks.entity.PantryBlockEntity;
-import net.fabricmc.firstmod.items.NewItem;
+import net.fabricmc.firstmod.items.ImposterSnack;
 import net.fabricmc.firstmod.items.PowderedCocoa;
 import net.fabricmc.firstmod.items.ReesesCup;
 import net.fabricmc.firstmod.items.SnickersBar;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -19,8 +18,6 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-
-import java.util.Set;
 
 public class Main implements ModInitializer {
 
@@ -31,7 +28,7 @@ public class Main implements ModInitializer {
 
 	public static final ItemGroup SNACK_GROUP = FabricItemGroupBuilder.build(new Identifier("firstmod", "snacks"),
 			() -> new ItemStack(Main.SUS_FOOD));
-	public static final Item NEW_ITEM = new NewItem(new FabricItemSettings().group(ItemGroup.MISC).group(SNACK_GROUP));
+	public static final Item NEW_ITEM = new ImposterSnack(new FabricItemSettings().group(ItemGroup.MISC).group(SNACK_GROUP));
 	// Snickers Bar
  	public static final Item SUS_FOOD = new SnickersBar(new FabricItemSettings().group(ItemGroup.FOOD)
 			.maxCount(16)

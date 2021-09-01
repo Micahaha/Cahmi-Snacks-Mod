@@ -8,8 +8,8 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 
-public class NewItem extends Item {
-    public NewItem(Settings settings){
+public class ImposterSnack extends Item {
+    public ImposterSnack(Settings settings){
             super(settings);
     }
 
