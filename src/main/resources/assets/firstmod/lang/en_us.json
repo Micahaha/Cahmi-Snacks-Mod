@@ -2,6 +2,10 @@
   "item.firstmod.new_item": "Imposter",
   "item.firstmod.sus_food": "Snickers Bar",
   "itemGroup.firstmod.snacks": "Cahmi's Snacks Mod",
-  "item.firstmod.reeses_cup": "Peanut Butter Reese's Cup",
-  "item.firstmod.powdered_cocoa": "Powdered Cocoa Beans"
+  "item.firstmod.reeses_cup": "Reese's Cup",
+  "item.firstmod.powdered_cocoa": "Powdered Cocoa Beans",
+  "item.firstmod.reeses_cup.tooltip_1": "A delicious delectable treat consisting of ",
+  "item.firstmod.reeses_cup.tooltip_2":"delicious, peanut butter and chocolate",
+  "item.firstmod.reeses_cup.tooltip_3":"combined to make a truly heterogeneous mixture of smooth and rich flavor!"
+
 }

@@ -24,8 +24,6 @@ public class Main implements ModInitializer {
 	// Change strength level later
 	public static final Block CANDY_PANTRY = new PantryBlock(FabricBlockSettings.of(Material.METAL));
 
-
-
 	public static final ItemGroup SNACK_GROUP = FabricItemGroupBuilder.build(new Identifier("firstmod", "snacks"),
 			() -> new ItemStack(Main.SUS_FOOD));
 	public static final Item NEW_ITEM = new ImposterSnack(new FabricItemSettings().group(ItemGroup.MISC).group(SNACK_GROUP));
