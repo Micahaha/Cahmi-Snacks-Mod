@@ -14,18 +14,14 @@ import java.util.List;
 public class PowderedCocoa extends Item {
 
 
-   public PowderedCocoa(Settings settings){
+    public PowderedCocoa(Settings settings) {
         super(settings);
     }
 
 
-    //I give up, No idea how to add ToolTips ):
-
-   /* @Override
-    public void appendTooltip(ItemStack itemStack, BlockView world, List<Text> tooltip, TooltipContext tooltipContext) {
-        tooltip.add( new TranslatableText("item.firstmod.powdered_cocoa").formatted(Formatting.RED));
-    */
-
+    @Override
+    public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
+        tooltip.add(new TranslatableText("item.firstmod.powdered_cocoa.tooltip").formatted(Formatting.DARK_RED));
     }
-
+}
 
